@@ -14,10 +14,18 @@ namespace Pets
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "AngularCatchAllRoute",
+                url: "ui/{*.}",
+                defaults: new { controller = "Tools", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.AppendTrailingSlash = true;
         }
     }
 }

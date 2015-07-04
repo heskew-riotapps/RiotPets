@@ -9,8 +9,8 @@
     <ProjectGuid>{6DE71618-653A-47A6-90D2-D2F2BB1E02C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pets.Tests</RootNamespace>
-    <AssemblyName>Pets.Tests</AssemblyName>
+    <RootNamespace>Pets.Web.Tests</RootNamespace>
+    <AssemblyName>Pets.Web.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -102,9 +105,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pets\Pets.csproj">
+    <ProjectReference Include="..\Pets\Web.csproj">
       <Project>{2A79EAD8-953C-4C66-9260-1F077D5176A9}</Project>
-      <Name>Pets</Name>
+      <Name>Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
