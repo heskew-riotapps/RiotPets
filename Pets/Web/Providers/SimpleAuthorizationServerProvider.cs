@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Owin.Security.OAuth;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Security.Claims;
-using Social123.AuthService.Objects;
+using Pets..AuthService.Objects;
 using Owin;
 using Microsoft.AspNet.Identity.Owin;
 using Social123.DataTools.BusinessEntities.Accounts;

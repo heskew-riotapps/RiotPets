@@ -105,7 +105,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pets\Web.csproj">
+    <ProjectReference Include="..\Web\Web.csproj">
       <Project>{2A79EAD8-953C-4C66-9260-1F077D5176A9}</Project>
       <Name>Web</Name>
     </ProjectReference>
